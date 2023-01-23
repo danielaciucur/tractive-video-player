@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-The video player is implemented using React PLayer library
+The video player is implemented using React Player component https://www.npmjs.com/package/react-player
 
 ## Available Scripts
 
