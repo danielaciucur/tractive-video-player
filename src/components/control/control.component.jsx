@@ -1,30 +1,37 @@
-import PlayCircleFilledSharpIcon from '@mui/icons-material/PlayCircleFilled';
-import PauseCircleFilledSharpIcon from '@mui/icons-material/PauseCircleFilledSharp';import './control.styles.css';
+import { BiPauseCircle } from "react-icons/bi";
+import { BiPlayCircle } from "react-icons/bi";
+import { GiSoundOff } from "react-icons/gi";
+import { GiSoundOn } from "react-icons/gi";
+
+import "./control.styles.scss";
 
 const Control = ({
-    onPlayPause,
-    playing,
-    duration,
-    currentTime,
-    volume,
-    controlRef
-  }) => {  
-    return (
-      <div className="control_Container" ref ={controlRef}>
-          <div className="control__box">
-              
-              <div className="icon__btn" onClick={onPlayPause}>
-                {playing ? (
-                  <PauseCircleFilledSharpIcon fontSize="large" />
-                ) : (
-                  <PlayCircleFilledSharpIcon fontSize="large"/>
-                )}{" "}
-              </div>   
-              <span>{ currentTime} / {duration}</span>
-                   
-            </div>
+  onPlayPause,
+  playing,
+  duration,
+  currentTime,
+  onMute,
+  mute,
+  controlRef,
+}) => {
+  return (
+    <div className="control_container" ref={controlRef}>
+      <div className="control__box">
+        <div className="play_btn" onClick={onPlayPause}>
+          {playing ? <BiPauseCircle size="2em" /> : <BiPlayCircle size="2em" />}{" "}
+        </div>
+
+        <div className="volume_btn">
+          <span>
+            {currentTime} / {duration}
+          </span>
+          <div onClick={onMute}>
+            {mute ? <GiSoundOff size="2em" /> : <GiSoundOn size="2em" />}
+          </div>
+        </div>
       </div>
-    );
-  };
-  
-  export default Control;
+    </div>
+  );
+};
+
+export default Control;

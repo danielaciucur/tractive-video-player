@@ -1,0 +1,30 @@
+.control_container {
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+  
+  .play_btn, .volume_btn {
+    padding: 0 10px;
+    color: white;
+  }
+
+  .volume_btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .control__box {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  span {
+    color: #fff;
+    font-size: 0.8rem;
+    margin: 0 15px 0 15px;
+    float: right;
+  }
