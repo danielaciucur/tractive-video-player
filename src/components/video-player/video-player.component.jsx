@@ -20,7 +20,7 @@ function VideoJS() {
     played: 0,
   });
 
-  const { playing, muted } = videoState;
+  const { playing, muted, played } = videoState;
 
   const currentTime = formatTime(
     videoPlayerRef.current ? videoPlayerRef.current.getCurrentTime() : "00:00"
@@ -37,7 +37,7 @@ function VideoJS() {
     setVideoState({ ...videoState, muted: !videoState.muted });
   };
 
-  const progressHandler = (state) => {
+  const progressHandler = () => {
     setVideoState({ ...videoState, played: videoState.played });
   };
 
@@ -53,6 +53,7 @@ function VideoJS() {
           muted={muted}
           onProgress={progressHandler}
           playing={playing}
+          played={played}
         />
         <Control
           controlRef={controlRef}
