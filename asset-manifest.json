@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tractive-video-player/static/css/main.e9b406f3.css",
+    "main.js": "/tractive-video-player/static/js/main.ab23555e.js",
+    "static/js/787.6871ce12.chunk.js": "/tractive-video-player/static/js/787.6871ce12.chunk.js",
+    "static/media/tractive-video.mp4": "/tractive-video-player/static/media/tractive-video.89140482324e18f9e975.mp4",
+    "index.html": "/tractive-video-player/index.html",
+    "main.e9b406f3.css.map": "/tractive-video-player/static/css/main.e9b406f3.css.map",
+    "main.ab23555e.js.map": "/tractive-video-player/static/js/main.ab23555e.js.map",
+    "787.6871ce12.chunk.js.map": "/tractive-video-player/static/js/787.6871ce12.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9b406f3.css",
+    "static/js/main.ab23555e.js"
+  ]
+}
