@@ -48,7 +48,6 @@ function VideoJS() {
           ref={videoPlayerRef}
           width="100%"
           height="100%"
-          className="player"
           url={tractiveVideo}
           muted={muted}
           onProgress={progressHandler}
